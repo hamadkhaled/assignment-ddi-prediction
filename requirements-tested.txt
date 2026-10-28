@@ -1,0 +1,15 @@
+# Tested on Python 3.14.6 on 15 October 2026.
+# Runtime and numerical dependencies used for the submitted results.
+numpy==2.4.6
+pandas==3.0.3
+scipy==1.18.0
+scikit-learn==1.9.0
+joblib==1.5.3
+threadpoolctl==3.5.0
+matplotlib==3.11.0
+ipython==9.15.0
+# Independent workbook verification and notebook validation/execution.
+openpyxl==3.1.5
+nbformat==5.10.4
+nbconvert==7.17.1
+ipykernel==6.31.0
