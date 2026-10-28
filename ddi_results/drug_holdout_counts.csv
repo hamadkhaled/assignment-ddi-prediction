@@ -1,0 +1,4 @@
+partition,rows,DDI,non_DDI
+Training,8852,4351,4501
+Testing,584,314,270
+Excluded crossing pairs,4516,2281,2235

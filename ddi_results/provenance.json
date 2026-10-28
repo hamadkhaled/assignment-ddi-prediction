@@ -1,0 +1,112 @@
+{
+  "paper_doi": "10.1136/amiajnl-2013-002512",
+  "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/4173180/bin/amiajnl-2013-002512-s2.xlsx",
+  "source_file": "amiajnl-2013-002512-s2.xlsx",
+  "sheet": "5-fold CV",
+  "retrieved_date": "2026-09-20",
+  "workbook_sha256": "9d60b830a0c2035e3e7dfd73106a5e7db214284e2e439a37e3869264ccf83cdf",
+  "embedded_csv_sha256": "b50d5679de3f8dfd213777e0f555867573e6810b322c9024bc5c5ad071412a58",
+  "seed": 42,
+  "folds": 5,
+  "threshold": 0.5,
+  "feature_columns": [
+    "structural",
+    "genomic",
+    "therapeutic",
+    "phenotypic"
+  ],
+  "audit": {
+    "rows": 13952,
+    "DDI": 6946,
+    "non_DDI": 7006,
+    "unique_drugs": 730,
+    "drugs_in_positive_pairs": 721,
+    "duplicate_unordered_pairs": 0,
+    "self_pairs": 0,
+    "missing_values": 0,
+    "unique_feature_vectors": 13915,
+    "feature_vectors_with_both_labels": 1,
+    "negative_only_drug_ids": [
+      "DB00309",
+      "DB00470",
+      "DB00811",
+      "DB00838",
+      "DB00917",
+      "DB00929",
+      "DB01013",
+      "DB01131",
+      "DB06706"
+    ]
+  },
+  "versions": {
+    "python": "3.14.6",
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "scikit-learn": "1.9.0",
+    "matplotlib": "3.11.0"
+  },
+  "execution_environment": "local Python/Jupyter",
+  "execution_started_utc": "2026-10-15T17:25:56.173391+00:00",
+  "execution_finished_utc": "2026-10-15T17:26:02.277058+00:00",
+  "model_parameters": {
+    "Prior baseline": {
+      "constant": "None",
+      "random_state": "None",
+      "strategy": "prior"
+    },
+    "Logistic regression": {
+      "memory": "None",
+      "steps": "[('scale', StandardScaler()), ('model', LogisticRegression(max_iter=2000, random_state=42))]",
+      "transform_input": "None",
+      "verbose": "False",
+      "scale": "StandardScaler()",
+      "model": "LogisticRegression(max_iter=2000, random_state=42)",
+      "scale__copy": "True",
+      "scale__with_mean": "True",
+      "scale__with_std": "True",
+      "model__C": "1.0",
+      "model__class_weight": "None",
+      "model__dual": "False",
+      "model__fit_intercept": "True",
+      "model__intercept_scaling": "1",
+      "model__l1_ratio": "0.0",
+      "model__max_iter": "2000",
+      "model__n_jobs": "None",
+      "model__penalty": "deprecated",
+      "model__random_state": "42",
+      "model__solver": "lbfgs",
+      "model__tol": "0.0001",
+      "model__verbose": "0",
+      "model__warm_start": "False"
+    },
+    "Random Forest": {
+      "bootstrap": "True",
+      "ccp_alpha": "0.0",
+      "class_weight": "None",
+      "criterion": "gini",
+      "max_depth": "8",
+      "max_features": "sqrt",
+      "max_leaf_nodes": "None",
+      "max_samples": "None",
+      "min_impurity_decrease": "0.0",
+      "min_samples_leaf": "5",
+      "min_samples_split": "2",
+      "min_weight_fraction_leaf": "0.0",
+      "monotonic_cst": "None",
+      "n_estimators": "200",
+      "n_jobs": "2",
+      "oob_score": "False",
+      "random_state": "42",
+      "verbose": "0",
+      "warm_start": "False"
+    }
+  },
+  "drug_holdout": {
+    "reserved_drug_count": 146,
+    "test_drugs_observed": 143,
+    "train_rows": 8852,
+    "test_rows": 584,
+    "excluded_crossing_rows": 4516,
+    "shared_train_test_drugs": 0
+  }
+}

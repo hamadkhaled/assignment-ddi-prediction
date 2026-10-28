@@ -1,0 +1,6 @@
+fold,train_rows,test_rows,test_positive_rows,both_drugs_seen,one_drug_seen,neither_drug_seen
+1,11161,2791,1390,2791,0,0
+2,11161,2791,1389,2791,0,0
+3,11162,2790,1389,2790,0,0
+4,11162,2790,1389,2790,0,0
+5,11162,2790,1389,2790,0,0
